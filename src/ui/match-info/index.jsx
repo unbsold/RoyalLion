@@ -1,7 +1,8 @@
-import React from 'react';
-import './style.scss';
+import React from 'react'
+import {Link} from 'react-router-dom'
+import './index.scss'
 
-const Match = () => {
+const Match = ({date,team1,team2,cf1,cf2,cf3,cf4,cf5,cf6}) => {
   return(
     <div className="match row">
       <div className="col-lg-1">
@@ -16,7 +17,7 @@ const Match = () => {
         <div className="name">
           <div className="command">
             <div className="label">
-              Барселона
+              {team1}
             </div>
             <div className="logo">
               <img src="img/barselona.png" alt=""/>
@@ -30,7 +31,7 @@ const Match = () => {
               <img src="img/barselona.png" alt=""/>
             </div>
             <div className="label">
-              Барселона
+              {team2}
             </div>
           </div>
         </div>
@@ -38,13 +39,13 @@ const Match = () => {
       </div>
       <div className="col-lg-6">
         <div className="coefficient">
-          <button className="item">1x <span className="number">2.37</span></button>
-          <button className="item">x <span className="number">2.37</span></button>
-          <button className="item">2x <span className="number">2.37</span></button>
-          <button className="item">Б <span className="number">2.37</span></button>
-          <button className="item">Т <span className="number">2.37</span></button>
-          <button className="item">М <span className="number">2.37</span></button>
-          <button className="more">+16 событий</button>
+          <Link className="item">1x <span className="number">{cf1}</span></Link>
+          <Link className="item">x <span className="number">{cf2}</span></Link>
+          <Link className="item">2x <span className="number">{cf3}</span></Link>
+          <Link className="item">Б <span className="number">{cf4}</span></Link>
+          <Link className="item">Т <span className="number">{cf5}</span></Link>
+          <Link className="item">М <span className="number">{cf6}</span></Link>
+          <Link className="more">+16 событий</Link>
         </div>
       </div>
     </div>

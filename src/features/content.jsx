@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route, Switch} from "react-router-dom";
 
-import Line from './page/line/line';
-import Live from './page/live/live';
+import {Line} from './line';
+import {Live} from './live';
 
 const Content = () => {
   return(

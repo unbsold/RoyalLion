@@ -1,13 +1,11 @@
-import React from 'react';
-import './style.scss';
+import React from 'react'
+import './index.scss'
 
-import Accordion from '@material-ui/core/Accordion';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
+import {Accordion, AccordionSummary, AccordionDetails} from '@material-ui/core/'
 
-import Match from '../../elements/match/match';
+import Match from './../../../ui/match-info';
 
-const Live = () => {
+export const Live = () => {
   return(
     <section className="line live">
       <div className="container">
@@ -101,5 +99,3 @@ const Live = () => {
     </section>
   )
 }
-
-export default Live

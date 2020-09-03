@@ -1,22 +1,23 @@
 import './styles/style.scss';
 import React from 'react';
+import { BrowserRouter } from "react-router-dom";
 
-import Header from './components/includes/header/header';
-import Footer from './components/includes/footer/footer';
-import Sidebar from './components/includes/sidebar/sidebar';
+import Header from './shared-features/header';
+import Footer from './shared-features/footer';
+import Sidebar from './shared-features/sidebar';
 
-import Content from './components/content';
+import Content from './features/content';
 
 
 
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
       <Sidebar />
       <Content />
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import './sidebar.scss';
+import {Link} from 'react-router-dom';
+import './index.scss';
 
 const Sidebar = () => {
   return(
@@ -8,54 +9,54 @@ const Sidebar = () => {
         <nav className="category">
           <div className="row justify-content-around">
             <div className="col-lg-auto">
-              <button className="btn-sort select">
+              <Link className="btn-sort select">
                 <i className="icon-football"></i>
-              </button>
+              </Link>
             </div>
             <div className="col-lg-auto">
-              <button className="btn-sort">
+              <Link className="btn-sort">
                 <i className="icon-tennis"></i>
-              </button>
+              </Link>
             </div>
             <div className="col-lg-auto">
-              <button className="btn-sort">
+              <Link className="btn-sort">
                 <i className="icon-hockey"></i>
-              </button>
+              </Link>
             </div>
             <div className="col-lg-auto">
-              <button className="btn-sort">
+              <Link className="btn-sort">
                 <i className="icon-basketball"></i>
-              </button>
+              </Link>
             </div>
             <div className="col-lg-auto">
-              <button className="btn-sort">
+              <Link className="btn-sort">
                 <i className="icon-volleyball"></i>
-              </button>
+              </Link>
             </div>
             <div className="col-lg-auto">
-              <button className="btn-sort">
+              <Link className="btn-sort">
                 <i className="icon-baseball"></i>
-              </button>
+              </Link>
             </div>
             <div className="col-lg-auto">
-              <button className="btn-sort">
+              <Link className="btn-sort">
                 <i className="icon-ping-pong"></i>
-              </button>
+              </Link>
             </div>
             <div className="col-lg-auto">
-              <button className="btn-sort">
+              <Link className="btn-sort">
                 <i className="icon-gandbol"></i>
-              </button>
+              </Link>
             </div>
             <div className="col-lg-auto">
-              <button className="btn-sort">
+              <Link className="btn-sort">
                 <i className="icon-american-football"></i>
-              </button>
+              </Link>
             </div>
             <div className="col-lg-auto">
-              <button className="btn-sort">
+              <Link className="btn-sort">
                 <i className="icon-badminton"></i>
-              </button>
+              </Link>
             </div>
           </div>
         </nav>

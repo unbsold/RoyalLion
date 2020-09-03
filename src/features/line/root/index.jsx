@@ -1,31 +1,46 @@
-import React from 'react';
-import './style.scss';
+import React from 'react'
+import './index.scss'
 
-import Accordion from '@material-ui/core/Accordion';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
+import {Accordion, AccordionSummary, AccordionDetails} from '@material-ui/core/'
 
-import Match from '../../elements/match/match';
+import Match from './../../../ui/match-info';
 
+const matches = [{
+  date: new Date(),
+  team1: 'Команда 1',
+  team2: 'Команда 2',
+  cf1: '2.37',
+  cf2: '2.37',
+  cf3: '2.37',
+  cf4: '2.37',
+  cf5: '2.37',
+  cf6: '2.37'
+}]
 
-
-const Line = () => {
+export const Line = () => {
   return(
-
     <section className="line">
       <div className="container">
-          <Accordion expanded>
+          <Accordion>
             <AccordionSummary
               expandIcon={<i className="icon-chevron-down"></i>}
             >
               Table Soccer League
             </AccordionSummary>
             <AccordionDetails>
-              <Match />
-              <Match />
-              <Match />
-              <Match />
-              <Match />
+              {matches.map(match =>
+                <Match
+                  date={match.date}
+                  team1={match.team1}
+                  team2={match.team2}
+                  cf1={match.cf1}
+                  cf2={match.cf2}
+                  cf3={match.cf3}
+                  cf4={match.cf4}
+                  cf5={match.cf5}
+                  cf6={match.cf6}
+                />
+              )}
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -116,5 +131,3 @@ const Line = () => {
     </section>
   )
 }
-
-export default Line
