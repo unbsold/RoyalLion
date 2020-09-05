@@ -20,9 +20,9 @@ const Header = () => {
             <button className="enter">
               Вход
             </button>
-            <button className="btn btn-mini">
+            <NavLink to="/registration" className="btn btn-mini">
               Регистрация
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>
